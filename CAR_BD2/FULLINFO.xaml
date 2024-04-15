@@ -1,0 +1,27 @@
+﻿<Page x:Class="CAR_BD2.FULLINFO"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CAR_BD2"
+      Loaded="Window_Loaded"
+      mc:Ignorable="d"
+      Title="FULLINFO" Height="510" Width="953">
+
+    <Grid>
+        <DataGrid x:Name="avto" Margin="10,10,23,248">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding CAR.NAME_CAR}" Header="Название автомобиля"/>
+                <DataGridTextColumn Binding="{Binding CAR.MODEL_CAR}" Header="Модель"/>
+                <DataGridTextColumn Binding="{Binding CAR.COLOR_CAR}" Header="Цвет"/>
+                <DataGridTextColumn Binding="{Binding CAR.NUMBER_CAR}" Header="Номера"/>
+                <DataGridTextColumn Binding="{Binding WHERE_THE_CAR_COMES_FROM.TITLE}" Header="Откуда привезли"/>
+                <DataGridTextColumn Binding="{Binding SUPPLIER.SURNAME}" Header="Фамилия Поставщика"/>
+                <DataGridTextColumn Binding="{Binding SUPPLIER.SUPPLIER_NAME}" Header="Имя Поставщика"/>
+                <DataGridTextColumn Binding="{Binding SUPPLIER.PATRONYMIC}" Header="Отчество Поставщика"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="exit" Content="Выход в меню" Margin="664,413,10,10" Click="exit_Click"/>
+
+    </Grid>
+</Page>

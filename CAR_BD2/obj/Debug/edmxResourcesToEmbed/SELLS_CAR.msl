@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SELLS_CARModelContainer" CdmEntityContainer="SELLS_CAREntities">
+    <EntitySetMapping Name="CAR">
+      <EntityTypeMapping TypeName="SELLS_CARModel.CAR">
+        <MappingFragment StoreEntitySet="CAR">
+          <ScalarProperty Name="ID_CARNAME" ColumnName="ID_CARNAME" />
+          <ScalarProperty Name="NAME_CAR" ColumnName="NAME_CAR" />
+          <ScalarProperty Name="MODEL_CAR" ColumnName="MODEL_CAR" />
+          <ScalarProperty Name="COLOR_CAR" ColumnName="COLOR_CAR" />
+          <ScalarProperty Name="NUMBER_CAR" ColumnName="NUMBER_CAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPLIER">
+      <EntityTypeMapping TypeName="SELLS_CARModel.SUPPLIER">
+        <MappingFragment StoreEntitySet="SUPPLIER">
+          <ScalarProperty Name="ID_SUPPLIER" ColumnName="ID_SUPPLIER" />
+          <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+          <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+          <ScalarProperty Name="PATRONYMIC" ColumnName="PATRONYMIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WHERE_THE_CAR_COMES_FROM">
+      <EntityTypeMapping TypeName="SELLS_CARModel.WHERE_THE_CAR_COMES_FROM">
+        <MappingFragment StoreEntitySet="WHERE_THE_CAR_COMES_FROM">
+          <ScalarProperty Name="ID_WHERE_THE_CAR_COMES_FROM" ColumnName="ID_WHERE_THE_CAR_COMES_FROM" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLOBAL_INFO">
+      <EntityTypeMapping TypeName="SELLS_CARModel.GLOBAL_INFO">
+        <MappingFragment StoreEntitySet="GLOBAL_INFO">
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="WHERE_THE_CAR_COMES_FROM_ID" ColumnName="WHERE_THE_CAR_COMES_FROM_ID" />
+          <ScalarProperty Name="CARNAME_ID" ColumnName="CARNAME_ID" />
+          <ScalarProperty Name="ID_GLOBAL_INFO" ColumnName="ID_GLOBAL_INFO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
